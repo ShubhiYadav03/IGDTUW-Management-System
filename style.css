@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@300&display=swap');
+
+:root {
+    --heading-font: 'Marcellus', serif;
+    --title-font: 'Montserrat', sans-serif;
+
+    --bg-color: #f7f6f1;
+    --light-section: #544c3e;
+    --dark-section: #302c24;
+    --dark-colour: #333333;
+    --light-colour: #dfdbd2;
+
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--title-font);
+    /* font-size: ; */
+    letter-spacing: 100;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.brand-logo,
+.desc {
+    letter-spacing: .2rem;
+    font-family: var(--heading-font);
+    margin-top: 3rem;
+    text-align: center;
+    color: var(--light-section);
+}
+
+.stroke ul li a,
+.stroke ul li a:after,
+.stroke ul li a:before {
+    transition: all .5s;
+}
+
+.stroke ul li a:hover {
+    color: #555;
+}
+
+/* stroke */
+.stroke ul li a {
+    position: relative;
+}
+
+.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+
+.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+
+.nav-item {
+    margin: 1rem 2rem;
+}
+
+.carousel {
+    margin: 1rem 8rem;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    /* object-fit: cover; */
+}
+
+.carousel-inner carousel-item img {
+    margin: auto;
+}
+
+/* .desc {
+    /* margin: 4rem 10rem;
+    padding: 0 8rem; */
+
+
+.desc p {
+    margin-top: 1.5rem;
+}
+
+.book-now {
+    margin-top: 3rem;
+    padding: 4rem;
+    background-color: var(--light-section);
+    color: var(--bg-color);
+    /* font-weight: 100; */
+}
+
+h3 {
+    font-family: var(--heading-font);
+    /* font-weight: 400; */
+    line-height: 2.5rem;
+    letter-spacing: .1rem;
+    /* //font-size: 1.5rem; */
+}
+
+.book-now .btn {
+    background-color: var(--bg-color);
+    color: var(--light-section);
+    border-radius: 0;
+    padding: .5rem 4rem;
+}
+
+.moments-item {
+    margin-top: 3rem;
+    justify-content: center;
+    /* margin: 2rem 1rem; */
+}
+
+.moments-item h5 {
+    margin-top: 1rem;
+}
+
+.moments-img {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+}
+
+.testimonials-section {
+    margin-top: 2rem;
+    background-color: var(--light-colour);
+    color: var(--dark-colour);
+}
+
+.testimonials {
+    margin-top: 4rem;
+
+}
+
+.testimonials-img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+
+.blank {
+    width: 100%;
+    height: 400px;
+    background-color: var(--dark-section);
+}
+
+.footer {
+    background-color: var(--light-colour);
+    text-align: left;
+    padding: 2rem 2rem;
+}
+
+
+
+
+/* ************************TESTIMONIALS PAGE ***************************** */
+
+/* .section {
+    margin: 0;
+    padding: 0;
+    height: 95vh;
+}
+
+.section div {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.stick-to-top {
+    position: sticky;
+    width: 100%;
+    height: 75vh;
+    top: 0;
+    z-index: -5;
+}
+
+.section div h2 {
+    font-family: Arial;
+    font-size: 5em;
+    color: white;
+}
+
+.sect-1 {
+    background-color: var(--light-colour);
+    z-index: -5;
+}
+
+.sect-2 {
+    background-color: var(--bg-color);
+}
+
+.sect-3 {
+    background-color: var(--light-colour);
+}
+
+.sect-4 {
+    background-color: var(--bg-color);
+} */
+
+.sect-img {
+    /* width: 100%;
+    height: auto; */
+    /* padding: 2rem; */
+    margin: 2rem;
+    border: 10px solid rgb(255, 255, 255);
+}
+
+
+
+/* body{
+max-width: 800px;
+margin: 0 auto;
+} */
+.page {
+    box-sizing: border-box;
+    height: 100vh;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    /* font-family: 'Libre Baskerville'; */
+    /* box-shadow: 0 10px 15px #00000060; */
+}
+
+
+.fs {
+    z-index: 5;
+    background: var(--light-colour);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sc {
+    background-color: var(--bg-color);
+    z-index: 4;
+    /* background: url("https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+    background-size: cover;
+    background-position: 0% 70%;
+    background-repeat: no-repeat;
+}
+
+.sc a {
+    color: #00b386;
+}
+
+.th {
+    background-color: var(--light-colour);
+    z-index: 3;
+    /* background: url("https://images.pexels.com/photos/3551227/pexels-photo-3551227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+    background-size: cover;
+    background-position: 0% 70%;
+    background-repeat: no-repeat;
+}
+
+.th a {
+    color: #00ace6;
+}
+
+.fr {
+    background-color: var(--bg-color);
+    z-index: 2;
+    /* background: url("https://images.pexels.com/photos/6775273/pexels-photo-6775273.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+    background-size: cover;
+    background-position: 0% 30%;
+    background-repeat: no-repeat;
+}
+
+.fr a {
+    color: #ff9999;
+}
+
+
+
+/* *************************************ENQUIRE PAGE ********************************** */
+.enq-sect-1 {
+    margin: 2rem 0;
+    justify-content: center;
+}
+
+.enquire-img {
+    width: 65%;
+    height: auto;
+}
+
+
+/* *************************************8Contact Form ********************************* */
+
+.contact-form {
+    margin: 5rem 10rem 2rem;
+    padding: 0rem 10rem;
+    /* background-color: #302c24; */
+    text-align: left;
+}
+
+input,
+textarea {
+
+    border-radius: 0;
+    margin: 8px 0rem 2rem;
+}
+
+.contact-form-submit {
+    background-color: var(--dark-section);
+    color: var(--light-colour);
+    border-radius: 0;
+    padding: .5rem 4rem;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.contact-form-submit:hover {
+    background-color: var(--light-section);
+    color: var(--bg-color);
+
+}
